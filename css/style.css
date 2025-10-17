@@ -1,0 +1,106 @@
+:root {
+  --color-1: #023047;
+  --color-2: #ffb703;
+  --color-3: #bcebff;
+  --color-4: #023047ab;
+  --text-font-size: 16px;
+}
+
+* {
+  color: var(--color-1);
+  box-shadow: none;
+  text-decoration: none !important;
+}
+
+body,
+nav {
+  background: var(--color-3) !important;
+}
+
+button {
+  padding: 10px 24px;
+  border-radius: 40px !important;
+  border-color: transparent;
+  background: var(--color-2);
+  color: var(--color-1);
+  font-weight: 700;
+}
+
+button:hover {
+  background: #c48d03;
+}
+
+button.button-outline {
+  border-color: var(--color-2);
+  color: var(--color-2);
+  background: transparent;
+}
+
+.text-yellow {
+  color: var(--color-2);
+}
+
+.step-circle {
+  background: var(--color-2);
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: 700;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.accordion-item, .accordion-button{
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+.accordion-button:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.hero-section {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background: linear-gradient(var(--color-4), var(--color-4)),
+    url(../images/Circa\ Luxury\ Apartment\ Hotel\ Cape\ Town\ South….jpg) center/cover;
+}
+
+.hero-search-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 10px 18px;
+  margin-top: 20px;
+  font-size: var(--text-font-size);
+  border-radius: 40px;
+  background-color: var(--color-3);
+}
+
+.hero-search-bar input {
+  flex: 1;
+  margin: 0 5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.page-link {
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.page-item.active .page-link {
+    background: var(--color-1);
+}

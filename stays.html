@@ -3,168 +3,270 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eaze Boulavard | Stays</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Eaze Boulevard - Effortless Comfort and Mobility</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .hero-section {
+        height: 70vh;
+        background: linear-gradient(#0000009a, #0000009a),
+          url(images/Check\ out\ new\ work\ on\ my\ @Behance\ profile_\ _4….jpg)
+            center/cover;
+      }
+
+      .playfair {
+        font-family: "Playfair Display", serif;
+      }
+
+      .room-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+    </style>
   </head>
-  <body style="background-color: white !important">
-  <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Eaze</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mx-md-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cars.html">Car rental</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="stays.html"
-                >Apartment booking</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tours.html">Tour and travel booking</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <a href="https://wa.me/2348032012487">
-              <button class="button-outline">Contact us</button>
-            </a>
+
+  <body>
+    <div id="vanta-bg" class="hero-section relative overflow-hidden">
+      <nav
+        class="absolute w-full z-10 py-6 px-4 md:px-12 bg-black bg-opacity-30"
+      >
+        <div class="flex justify-between items-center">
+          <div class="text-white text-2xl font-bold playfair">
+            <img src="images/logo.png" class="size-4" alt="" />
           </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-white hover:text-amber-300"
+              >Home</a
+            >
+            <a href="stays.html" class="text-white hover:text-amber-300"
+              >Hotel Stays</a
+            >
+            <a href="cars.html" class="text-white hover:text-amber-300"
+              >Car Rentals</a
+            >
+            <a href="#" class="text-white hover:text-amber-300">Contact</a>
+          </div>
+          <button class="md:hidden text-white">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center"
+      >
+        <div class="text-center px-4">
+          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 playfair">
+            Your Stay, Your Style
+          </h1>
+          <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
+            From short city visits to extended escapes, Eaze Boulevard offers
+            carefully curated hotel experiences that blend luxury, comfort and
+            affordability.
+          </p>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <!-- Stays Section-->
-    <section class="my-5 py-5">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-          <a href="stay-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/C Suites Hotel in Phillippines_ Hotel bedroom….jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                  Cozy Apartment in the Heart of the City
-                </h6>
-                <p class="card-description text-muted">
-                  Entire apartment • 1 bed
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
-        </a>
-          <a href="stay-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/Check out new work on my @Behance profile_ _4… - Copy.jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                  Cozy Apartment in the Heart of the City
-                </h6>
-                <p class="card-description text-muted">
-                  Entire apartment • 1 bed
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
-        </a>
-          <a href="stay-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/Circa Luxury Apartment Hotel Cape Town South….jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                  Cozy Apartment in the Heart of the City
-                </h6>
-                <p class="card-description text-muted">
-                  Entire apartment • 1 bed
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
-        </a>
-         
+    <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
+      <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">
+        Standard Room
+      </h1>
+      <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0038.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
         </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0039.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0040.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0041.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
       </div>
     </section>
 
-  <div class="w-100 d-flex justify-content-center">
-      <ul class="pagination">
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a></li>
-      <li class="page-item active mx-3 border-0"><a class="page-link" href="#">1</a></li>
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#">2</a></li>
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#">3</a></li>
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
-    </ul>
-  </div>
-
-  <!-- Footer -->
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="cars.html" class="nav-link px-2 text-body-secondary"
-                >Car rental</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="stays.html" class="nav-link px-2 text-body-secondary"
-                >Apartment booking</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="tours.html" class="nav-link px-2 text-body-secondary"
-                >Tour and travel booking</a
-              >
-            </li>
-          </ul>
-          <ul class="nav justify-content-center pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </li>
-          </ul>
-          <p class="text-center text-body-secondary">© 2025 Eaze Boulavard</p>
-        </footer>
+    <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
+      <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">Deluxe Room</h1>
+      <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0034.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0035.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0036.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0037.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
       </div>
+    </section>
 
+    <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
+      <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">
+        Super Deluxe Room
+      </h1>
+      <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0030.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0031.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0032.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+        <a href="stay-details.html">
+        <div>
+          <img
+            src="images/IMG-20251018-WA0033.jpg"
+            class="rounded-lg mx-3"
+            alt=""
+          />
+        </div>
+        </a>
+      </div>
+    </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <footer class="bg-gray-900 text-white py-12 px-4 mt-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 playfair">Eaze Boulevard</h3>
+          <p class="text-gray-400">
+            Eaze Boulevard provides premium hotel stays and car rental services
+            rhat bring ease ti every traveler. Experience conveninence, comfort,
+            class all in one place.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="text-gray-400 hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="cars.html" class="text-gray-400 hover:text-white"
+                >Hotel Stays</a
+              >
+            </li>
+            <li>
+              <a href="stays.html" class="text-gray-400 hover:text-white"
+                >Car Rentals</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start">
+              <i data-feather="map-pin" class="mr-2 mt-1"></i>
+              <span>Independence Layout Enugu, Nigeria</span>
+            </li>
+            <li class="flex items-center">
+              <i data-feather="phone" class="mr-2"></i>
+              <span>+2348068147424</span>
+            </li>
+            <li class="flex items-center">
+              <i data-feather="mail" class="mr-2"></i>
+              <span>info@eazeboulevard.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+      >
+        <p>&copy; 2025 Eaze Boulevard. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

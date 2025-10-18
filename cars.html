@@ -3,219 +3,254 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eaze Boulavard | Cars</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Eaze Boulevard - Effortless Comfort and Mobility</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fontawesome-all.css" />
-  </head>
-  <body style="background-color: white !important">
-  <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Eaze</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mx-md-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cars.html">Car rental</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="stays.html"
-                >Apartment booking</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tours.html">Tour and travel booking</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-                  <a href="https://wa.me/2348032012487">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
 
-                    <button class="button-outline">Contact us</button>
-                  </a>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .hero-section {
+        height: 70vh;
+        background: linear-gradient(#0000009a, #0000009a);
+      }
+
+      .playfair {
+        font-family: "Playfair Display", serif;
+      }
+
+      .room-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="vanta-bg" class="hero-section relative overflow-hidden">
+      <nav
+        class="absolute w-full z-10 py-6 px-4 md:px-12 bg-black bg-opacity-30"
+      >
+        <div class="flex justify-between items-center">
+          <div class="text-white text-2xl font-bold playfair">
+            <img src="images/logo.png" class="size-4" alt="" />
           </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-white hover:text-amber-300"
+              >Home</a
+            >
+            <a href="stays.html" class="text-white hover:text-amber-300"
+              >Hotel Stays</a
+            >
+            <a href="cars.html" class="text-white hover:text-amber-300"
+              >Car Rentals</a
+            >
+            <a href="#" class="text-white hover:text-amber-300">Contact</a>
+          </div>
+          <button class="md:hidden text-white">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center"
+      >
+        <div class="text-center px-4">
+          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 playfair">
+            Drive in Comfort, Arrive in Style.
+          </h1>
+          <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
+            Explore our fleet of mordern, reliable vehicles - from compact city
+            cars to luxury rides. With Eaze Boulevard, every trip feels
+            effortless.
+          </p>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <!-- Stays Section-->
-    <section class="my-5 py-5">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-          <a href="cars-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/7b6071ec-4574-4b64-9f9f-6befe9e10ea6.jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                 2023 Tesla Model 3
-                </h6>
-                <p class="card-description text-muted">
-                  Automatic • 5 seats
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
+    <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
+      <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">Our Cars</h1>
+      <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0022.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
         </a>
-          <a href="cars-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/2681a0fb-61fe-4e33-bf4a-0f82a9c401ea.jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                 2023 Tesla Model 3
-                </h6>
-                <p class="card-description text-muted">
-                  Automatic • 5 seats
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0018.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
         </a>
-          <a href="cars-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/2681a0fb-61fe-4e33-bf4a-0f82a9c401ea.jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                 2023 Tesla Model 3
-                </h6>
-                <p class="card-description text-muted">
-                  Automatic • 5 seats
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0020.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
         </a>
-          <a href="cars-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/7b6071ec-4574-4b64-9f9f-6befe9e10ea6.jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                 2023 Tesla Model 3
-                </h6>
-                <p class="card-description text-muted">
-                  Automatic • 5 seats
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0025.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
         </a>
-          <a href="cars-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/2681a0fb-61fe-4e33-bf4a-0f82a9c401ea.jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                 2023 Tesla Model 3
-                </h6>
-                <p class="card-description text-muted">
-                  Automatic • 5 seats
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
+
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0024.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
         </a>
-          <a href="cars-details.html" class="col">
-            <div class="card shadow-none border-0">
-              <img src="images/7b6071ec-4574-4b64-9f9f-6befe9e10ea6.jpg" alt="" class="card-img-top h-75" />
-              <div class="card-body h-25">
-                <h6 class="card-title">
-                 2023 Tesla Model 3
-                </h6>
-                <p class="card-description text-muted">
-                  Automatic • 5 seats
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><i class="far fa-star text-yellow"></i> 4.8</p>
-                  <p class="text-body-secondary fw-bold">$150 / night</p>
-                </div>
-              </div>
-            </div>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0021.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
         </a>
-        </div>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0019.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0029.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
+        </a>
+
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0028.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0026.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0027.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="cars-details.html">
+          <div>
+            <img
+              src="images/IMG-20251018-WA0023.jpg"
+              class="rounded-lg mx-3"
+              alt=""
+            />
+          </div>
+        </a>
       </div>
     </section>
 
-  <div class="w-100 d-flex justify-content-center">
-      <ul class="pagination">
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a></li>
-      <li class="page-item active mx-3 border-0"><a class="page-link" href="#">1</a></li>
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#">2</a></li>
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#">3</a></li>
-      <li class="page-item mx-3 border-0"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
-    </ul>
-  </div>
-
-  <!-- Footer -->
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="cars.html" class="nav-link px-2 text-body-secondary"
-                >Car rental</a
+    <footer class="bg-gray-900 text-white py-12 px-4 mt-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 playfair">Eaze Boulevard</h3>
+          <p class="text-gray-400">
+            Eaze Boulevard provides premium hotel stays and car rental services
+            rhat bring ease ti every traveler. Experience conveninence, comfort,
+            class all in one place.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="text-gray-400 hover:text-white"
+                >Home</a
               >
             </li>
-            <li class="nav-item">
-              <a href="stays.html" class="nav-link px-2 text-body-secondary"
-                >Apartment booking</a
+            <li>
+              <a href="cars.html" class="text-gray-400 hover:text-white"
+                >Hotel Stays</a
               >
             </li>
-            <li class="nav-item">
-              <a href="tours.html" class="nav-link px-2 text-body-secondary"
-                >Tour and travel booking</a
+            <li>
+              <a href="stays.html" class="text-gray-400 hover:text-white"
+                >Car Rentals</a
               >
             </li>
           </ul>
-          <ul class="nav justify-content-center pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-instagram"></i
-              ></a>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start">
+              <i data-feather="map-pin" class="mr-2 mt-1"></i>
+              <span>Independence Layout Enugu, Nigeria</span>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-twitter"></i
-              ></a>
+            <li class="flex items-center">
+              <i data-feather="phone" class="mr-2"></i>
+              <span>+2348068147424</span>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-facebook"></i
-              ></a>
+            <li class="flex items-center">
+              <i data-feather="mail" class="mr-2"></i>
+              <span>info@eazeboulevard.com</span>
             </li>
           </ul>
-          <p class="text-center text-body-secondary">© 2025 Eaze Boulavard</p>
-        </footer>
+        </div>
       </div>
-
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+      <div
+        class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+      >
+        <p>&copy; 2025 Eaze Boulevard. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

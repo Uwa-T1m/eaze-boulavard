@@ -3,335 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eaze Boulevard - Effortless Comfort and Mobility</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/fontawesome-all.css" />
-    <title>Eaze Boulavard</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .hero-section {
+        height: 100vh;
+        background: linear-gradient(#0000009a, #0000009a),
+          url(images/IMG-20251018-WA0038.jpg);
+      }
+
+      .playfair {
+        font-family: "Playfair Display", serif;
+      }
+
+      .room-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+    </style>
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Eaze</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mx-md-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cars.html">Car rental</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="stays.html">Apartment booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tours.html">Tour and travel booking</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <a href="https://wa.me/2348032012487">
-              <button class="button-outline">Contact us</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
 
-    <main class="container">
-      <!-- Hero section -->
-      <div class="px-4 py-5 my-5 text-center">
-        <div class="hero-section mx-auto">
-          <h1 class="display-5 fw-bold text-light">
-            One search - Many outcomes
+  <body class="bg-gray-50">
+    <div id="vanta-bg" class="hero-section relative flex overflow-hidden">
+      <nav
+        class="absolute w-full z-50 py-6 px-4 md:px-12"
+      >
+        <div class="flex justify-between items-center">
+          <div class="text-white text-2xl font-bold playfair">
+            <img src="images/logo.png" class="size-4" alt="" />
+          </div>
+          <div id="mobile-menu" class="hidden md:flex flex flex-col md:flex-row  md:space-x-8 bg-black bg-opacity-40 md:bg-transparent absolute md:static top-16 right-0 md:w-auto">
+            <a href="index.html" class="text-white hover:text-amber-300">Home</a>
+            <a href="stays.html" class="text-white hover:text-amber-300">Hotel Stays</a>
+            <a href="cars.html" class="text-white hover:text-amber-300">Car Rentals</a>
+            <a href="#" class="text-white hover:text-amber-300">Contact</a>
+          </div>
+          <button class="md:hidden text-white" id="menu-toggle">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+<video src="images/VID-20251018-WA0042.mp4" autoplay muted loop playsinline class="absolute inset-0 h-full w-full object-cover"></video>
+
+<div class="absolute inset-0 bg-black bg-opacity-40 "></div>
+
+      <div
+        class="flex items-center justify-center"
+      >
+        <div class="text-center px-4">
+          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 playfair">
+            Experience Comfort, Freedom and Style with Eaze Boulevard.
           </h1>
-          <div class="col-lg-6 mx-auto">
-            <div class="hero-search-bar">
-              <!-- <div> -->
-              <i class="fas fa-search"></i>
-              <input
-                type="text"
-                placeholder="Search for a place, car or apartment.."
-                name=""
-                id=""
-              />
-              <!-- </div> -->
-              <button>Search</button>
+          <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
+            Your trusted destination for seamless hotel stays and premium car
+            rentals.
+          </p>
+          <button
+            class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-medium transition duration-300"
+          >
+            Start your journey
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-20 px-4 md:px-12 max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair">
+            Welcome to Eaze Boulevard
+          </h2>
+          <p class="text-gray-600 mb-6">
+            At Eaze Boulevard, we bring conveninence and luxury together.
+            Whether you are visiting for business, leisure or adventure, our
+            mordern hotel stays and flexible car rental services make every
+            journey effortless. From cozy suites to executive rides, we provide
+            everything you need to travel in comfort and style.
+          </p>
+          <div class="flex items-center">
+            <div
+              class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full font-medium"
+            >
+              Award-WInning Hospitality & Travel Service.
             </div>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            src="images/IMG-20251018-WA0035.jpg"
+            alt="Hotel Exterior"
+            class="rounded-lg shadow-xl w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-20 px-4">
+      <div class="max-w-7xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair">
+          Travel Made Simple
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Discover how Eaze Boulevard redefines travel with tailored experience,
+          reliable car rentals and elegant hotel spaces. Wherever you go, we
+          ensure comfort follows you.
+        </p>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
+      >
+        <!-- Room Cards -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-md room-card transition duration-300"
+        >
+          <img
+            src="images/IMG-20251018-WA0030.jpg"
+            alt="Swiss Garden"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 playfair">Executive Suites</h3>
+            <p class="text-gray-600 mb-4">
+              Premium rooms designed for rest and productivity
+            </p>
+            <a href="#" class="text-amber-600 hover:text-amber-800 font-medium"
+              >Learn more →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-md room-card transition duration-300"
+        >
+          <img
+            src="images/IMG-20251018-WA0037.jpg"
+            alt="Carlton Studio Room"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 playfair">Deluxe Apartments</h3>
+            <p class="text-gray-600 mb-4">
+              Spacious accomodations for long or family stays
+            </p>
+            <a href="#" class="text-amber-600 hover:text-amber-800 font-medium"
+              >Learn more →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-md room-card transition duration-300"
+        >
+          <img
+            src="images/IMG-20251018-WA0022.jpg"
+            alt="Apartment (2)"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 playfair">Luxury Cars</h3>
+            <p class="text-gray-600 mb-4">
+              Rent high-end vehicles for business or leisure trips.
+            </p>
+            <a href="#" class="text-amber-600 hover:text-amber-800 font-medium"
+              >Learn more →</a
+            >
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Services section -->
-      <section>
-        <h2 class="text-center">Explore Eaze</h2>
-        <div class="row g-4 mx-0 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col text-center" style="object-fit: cover; object-position: center;">
-            <img src="images/C Suites Hotel in Phillippines_ Hotel bedroom….jpg" class="w-100 h-50" alt="1" />
-            <h4 class="text-body-emphasis">Stays</h4>
-          </div>
-          <div class="feature col text-center" style="object-fit: cover; object-position: center;">
-            <img src="images/stunning sunset view of the Taj Mahal.jpg" class="w-100 h-50" alt="1" />
-            <h4 class="text-body-emphasis">Tours</h4>
-          </div>
-          <div class="feature col text-center" style="object-fit: cover; object-position: center;">
-            <img src="images/7b6071ec-4574-4b64-9f9f-6befe9e10ea6.jpg" class="w-100 h-50" alt="1" />
-            <h4 class="text-body-emphasis">Cars</h4>
-          </div>
-        </div>
-      </section>
+  
 
-      <!-- Popular Listings section -->
-      <section>
-        <h2 class="text-center">Popular listings</h2>
-        <div class="row g-4 mx-0 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <img src="images/Check out new work on my @Behance profile_ _4… - Copy.jpg" class="w-100 h-50"  alt="1" />
-            <h4 class="text-body-emphasis my-3">Sunshine Hotels</h4>
-            <p class="text-muted">Lorem ipsum dolor...</p>
-          </div>
-          <div class="feature col">
-            <img src="images/Circa Luxury Apartment Hotel Cape Town South….jpg" class="w-100 h-50"  alt="1" />
-            <h4 class="text-body-emphasis my-3">Sunshine Hotels</h4>
-            <p class="text-muted">Lorem ipsum dolor...</p>
-          </div>
-          <div class="feature col">
-            <img src="images/C Suites Hotel in Phillippines_ Hotel bedroom….jpg" class="w-100 h-50"  alt="1" />
-            <h4 class="text-body-emphasis my-3">Sunshine Hotels</h4>
-            <p class="text-muted">Lorem ipsum dolor...</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Eaze section -->
-      <section>
-        <h2 class="text-center">Why Eaze?</h2>
-        <div class="row g-4 mx-0 py-5 row-cols-1 row-cols-lg-3 text-center">
-          <div class="feature col">
-            <i class="fas fa-handshake text-yellow fs-2"></i>
-            <h4 class="text-body-emphasis my-3">Trusted Platform</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              facilis!
-            </p>
-          </div>
-          <div class="feature col">
-            <i class="fas fa-handshake text-yellow fs-2"></i>
-            <h4 class="text-body-emphasis my-3">Trusted Platform</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              facilis!
-            </p>
-          </div>
-          <div class="feature col">
-            <i class="fas fa-handshake text-yellow fs-2"></i>
-            <h4 class="text-body-emphasis my-3">Trusted Platform</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              facilis!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- How it works section -->
-      <section>
-        <h2 class="text-center">How it works</h2>
-        <div class="row g-4 mx-0 py-5 row-cols-1 row-cols-lg-3 text-center">
-          <div class="feature col">
-            <h3 class="step-circle fs-2">1</h3>
-            <h4 class="text-body-emphasis my-3">Search</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              facilis!
-            </p>
-          </div>
-          <div class="feature col">
-            <h3 class="step-circle fs-2">2</h3>
-            <h4 class="text-body-emphasis my-3">Book</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              facilis!
-            </p>
-          </div>
-          <div class="feature col">
-            <h3 class="step-circle fs-2">3</h3>
-            <h4 class="text-body-emphasis my-3">Enjoy</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              facilis!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ Section -->
-      <section>
-        <h2 class="text-center">Frequently asked questions</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Accordion Item #1
-              </button>
-            </h4>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Accordion Item #2
-              </button>
-            </h4>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Accordion Item #3
-              </button>
-            </h4>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">
-          Start your adventure with Eaze today!
-        </h1>
-        <div class="col-lg-6 mx-auto">
-          <div class="d-grid gap-2 d-sm-flex mt-4 justify-content-sm-center">
-            <button>Get Started</button>
-          </div>
-        </div>
+    <section class="bg-amber-50 py-20 px-4">
+      <div class="max-w-7xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair">
+         Start your adventure with Eaze today!
+        </h2>
+        <button
+          class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-medium transition duration-300"
+        >
+          Get Started
+        </button>
       </div>
+    </section>
 
-      <!-- Footer -->
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+
+    <section class="bg-gray-800 py-16 px-4" style="color: white !important;">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 playfair">
+          @eazeboulevard
+        </h2>
+        <div class="flex justify-center space-x-4 mb-8">
+          <a href="#" class="text-white hover:text-amber-300"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="#" class="text-white hover:text-amber-300"
+            ><i data-feather="facebook"></i
+          ></a>
+          <a href="#" class="text-white hover:text-amber-300"
+            ><i data-feather="twitter"></i
+          ></a>
+        </div>
+        <p>
+            Follow our journey as we make travel simpler, smarter, and more enjoyable across Enugu.
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 playfair">Eaze Boulevard</h3>
+          <p class="text-gray-400">
+            Eaze Boulevard provides premium hotel stays and car rental services rhat bring ease ti every traveler. Experience conveninence, comfort, class all in one place.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li>
+              <a href="cars.html" class="text-gray-400 hover:text-white">Hotel Stays</a>
             </li>
-            <li class="nav-item">
-              <a href="cars.html" class="nav-link px-2 text-body-secondary"
-                >Car rental</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="stays.html" class="nav-link px-2 text-body-secondary"
-                >Apartment booking</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="tours.html" class="nav-link px-2 text-body-secondary"
-                >Tour and travel booking</a
-              >
+            <li>
+              <a href="stays.html" class="text-gray-400 hover:text-white">Car Rentals</a>
             </li>
           </ul>
-          <ul class="nav justify-content-center pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-instagram"></i
-              ></a>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start">
+              <i data-feather="map-pin" class="mr-2 mt-1"></i>
+              <span>Independence Layout Enugu, Nigeria</span>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-twitter"></i
-              ></a>
+            <li class="flex items-center">
+              <i data-feather="phone" class="mr-2"></i>
+              <span>+2348068147424</span>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted"
-                ><i class="fab fa-facebook"></i
-              ></a>
+            <li class="flex items-center">
+              <i data-feather="mail" class="mr-2"></i>
+              <span>info@eazeboulevard.com</span>
             </li>
           </ul>
-          <p class="text-center text-body-secondary">© 2025 Eaze Boulavard</p>
-        </footer>
+        </div>
+       
       </div>
-    </main>
+      <div
+        class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+      >
+        <p>&copy; 2025 Eaze Boulevard. All rights reserved.</p>
+      </div>
+    </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      VANTA.GLOBE({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xffa500,
+        backgroundColor: 0x0,
+      });
+    </script>
+    <script>
+      feather.replace();
+    </script>
+
+    
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", () =>  mobileMenu.classList.toggle("hidden"))
+    </script>
   </body>
 </html>

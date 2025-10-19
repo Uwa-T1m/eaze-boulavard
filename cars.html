@@ -17,7 +17,7 @@
 
       .hero-section {
         height: 70vh;
-        background: linear-gradient(#0000009a, #0000009a);
+        background: linear-gradient(#0000009a, #0000009a), url(images/2681a0fb-61fe-4e33-bf4a-0f82a9c401ea.jpg);
       }
 
       .playfair {
@@ -41,7 +41,7 @@
 
   <body>
     <div id="vanta-bg" class="hero-section relative overflow-hidden">
-          <nav
+            <nav
         class="absolute w-full z-50 py-6 px-4 md:px-12"
       >
         <div class="flex justify-between items-center">
@@ -59,7 +59,6 @@
           </button>
         </div>
       </nav>
-
 
       <div
         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center"
@@ -193,33 +192,23 @@
       </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-12 px-4 mt-12">
+       <footer class="bg-gray-900 text-white py-12 px-4">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 class="text-xl font-bold mb-4 playfair">Eaze Boulevard</h3>
           <p class="text-gray-400">
-            Eaze Boulevard provides premium hotel stays and car rental services
-            rhat bring ease ti every traveler. Experience conveninence, comfort,
-            class all in one place.
+            Eaze Boulevard provides premium hotel stays and car rental services rhat bring ease ti every traveler. Experience conveninence, comfort, class all in one place.
           </p>
         </div>
         <div>
           <h3 class="text-lg font-bold mb-4">Quick Links</h3>
           <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
             <li>
-              <a href="index.html" class="text-gray-400 hover:text-white"
-                >Home</a
-              >
+              <a href="cars.html" class="text-gray-400 hover:text-white">Hotel Stays</a>
             </li>
             <li>
-              <a href="cars.html" class="text-gray-400 hover:text-white"
-                >Hotel Stays</a
-              >
-            </li>
-            <li>
-              <a href="stays.html" class="text-gray-400 hover:text-white"
-                >Car Rentals</a
-              >
+              <a href="stays.html" class="text-gray-400 hover:text-white">Car Rentals</a>
             </li>
           </ul>
         </div>
@@ -228,11 +217,11 @@
           <ul class="space-y-2 text-gray-400">
             <li class="flex items-start">
               <i data-feather="map-pin" class="mr-2 mt-1"></i>
-              <span>Independence Layout Enugu, Nigeria</span>
+              <span>New Haven Health Centre Enugu, Nigeria</span>
             </li>
             <li class="flex items-center">
               <i data-feather="phone" class="mr-2"></i>
-              <span>+2348068147424</span>
+              <span>+234 803 133 9022</span>
             </li>
             <li class="flex items-center">
               <i data-feather="mail" class="mr-2"></i>
@@ -240,6 +229,7 @@
             </li>
           </ul>
         </div>
+       
       </div>
       <div
         class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
@@ -248,6 +238,25 @@
       </div>
     </footer>
 
+<script>
+      VANTA.GLOBE({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xffa500,
+        backgroundColor: 0x0,
+      });
+    </script>
+    <script>
+      feather.replace();
+    </script>
+
+    
     <script>
         const menuToggle = document.getElementById("menu-toggle");
         const mobileMenu = document.getElementById("mobile-menu");

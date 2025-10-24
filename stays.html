@@ -1,282 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eaze Boulevard - Effortless Comfort and Mobility</title>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
 
-      body {
-        font-family: "Montserrat", sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eaze Boulevard - Effortless Comfort and Mobility</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
 
-      .hero-section {
-        height: 70vh;
-        background: linear-gradient(#0000009a, #0000009a),
-          url(images/Check\ out\ new\ work\ on\ my\ @Behance\ profile_\ _4….jpg)
-            center/cover;
-      }
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
 
-      .playfair {
-        font-family: "Playfair Display", serif;
-      }
+    .hero-section {
+      height: 70vh;
+      background: linear-gradient(#0000009a, #0000009a),
+        url(images/Check\ out\ new\ work\ on\ my\ @Behance\ profile_\ _4….jpg) center/cover;
+    }
 
-      .room-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-      }
+    .playfair {
+      font-family: "Playfair Display", serif;
+    }
 
-      .testimonial-card {
-        transition: all 0.3s ease;
-      }
+    .room-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
 
-      .testimonial-card:hover {
-        transform: scale(1.03);
-      }
-    </style>
-  </head>
+    .testimonial-card {
+      transition: all 0.3s ease;
+    }
 
-  <body>
-    <div id="vanta-bg" class="hero-section relative overflow-hidden">
-            <nav
-        class="absolute w-full z-50 py-6 px-4 md:px-12"
-      >
-        <div class="flex justify-between items-center">
-          <div class="text-white text-2xl font-bold playfair">
-            <img src="images/logo.png" class="size-4" alt="" />
-          </div>
-          <div id="mobile-menu" class="hidden md:flex flex flex-col md:flex-row  md:space-x-8 bg-black bg-opacity-40 md:bg-transparent absolute md:static top-16 right-0 md:w-auto">
-            <a href="index.html" class="text-white hover:text-amber-300">Home</a>
-            <a href="stays.html" class="text-white hover:text-amber-300">Hotel Stays</a>
-            <a href="cars.html" class="text-white hover:text-amber-300">Car Rentals</a>
-           <a href="https://wa.me/2348031339022" class="text-white hover:text-amber-300">Contact</a>
-          </div>
-          <button class="md:hidden text-white" id="menu-toggle">
-            <i data-feather="menu"></i>
-          </button>
+    .testimonial-card:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="vanta-bg" class="hero-section relative overflow-hidden">
+    <nav class="absolute w-full z-50 py-6 px-4 md:px-12">
+      <div class="flex justify-between items-center">
+        <div class="text-white text-2xl font-bold playfair">
+          <img src="images/logo.png" class="size-4" alt="" />
         </div>
-      </nav>
-
-      <div
-        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center"
-      >
-        <div class="text-center px-4">
-          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 playfair">
-            Your Stay, Your Style
-          </h1>
-          <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
-            From short city visits to extended escapes, Eaze Boulevard offers
-            carefully curated hotel experiences that blend luxury, comfort and
-            affordability.
-          </p>
+        <div id="mobile-menu"
+          class="hidden md:flex flex flex-col md:flex-row  md:space-x-8 bg-black bg-opacity-40 md:bg-transparent absolute md:static top-16 right-0 md:w-auto">
+          <a href="index.html" class="text-white hover:text-amber-300">Home</a>
+          <a href="stays.html" class="text-white hover:text-amber-300">Hotel Stays</a>
+          <a href="cars.html" class="text-white hover:text-amber-300">Car Rentals</a>
+          <a href="https://wa.me/2348031339022" class="text-white hover:text-amber-300">Contact</a>
         </div>
+        <button class="md:hidden text-white" id="menu-toggle">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <div class="text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 playfair">
+          Your Stay,Your Style
+        </h1>
+        <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
+          From short city visits to extended escapes,Eaze Boulevard offers carefully curated hotel experiences that
+          blend luxury,comfort and affordability.
+        </p>
       </div>
     </div>
+  </div>
 
-    <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
-      <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">
-        Standard Room
-      </h1>
-      <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
-        <a href="stay-details.html">
+  <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
+    <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">
+      Standard Room
+    </h1>
+    <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
+      <a href="stay-details.html">
         <div>
-          <img
-            src="images/IMG-20251018-WA0038.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
+          <img src="images/IMG-20251018-WA0038.jpg" class="rounded-lg mx-3" alt="" />
         </div>
-        </a>
-        <a href="stay-details.html">
+      </a>
+      <a href="stay-details.html">
         <div>
-          <img
-            src="images/IMG-20251018-WA0039.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
+          <img src="images/IMG-20251018-WA0039.jpg" class="rounded-lg mx-3" alt="" />
         </div>
-        </a>
-        <a href="stay-details.html">
+      </a>
+      <a href="stay-details.html">
         <div>
-          <img
-            src="images/IMG-20251018-WA0040.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
+          <img src="images/IMG-20251018-WA0040.jpg" class="rounded-lg mx-3" alt="" />
         </div>
-        </a>
-        <a href="stay-details.html">
+      </a>
+      <a href="stay-details.html">
         <div>
-          <img
-            src="images/IMG-20251018-WA0041.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
+          <img src="images/IMG-20251018-WA0041.jpg" class="rounded-lg mx-3" alt="" />
         </div>
-        </a>
+      </a>
+    </div>
+  </section>
+
+  <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
+    <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">Deluxe Room</h1>
+    <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
+      <a href="stay-details.html">
+        <div>
+          <img src="images/20251019_103203.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+      <a href="stay-details.html">
+        <div>
+          <img src="images/20251019_103304.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+      <a href="stay-details.html">
+        <div>
+          <img src="images/20251019_103333.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+      <a href="stay-details.html">
+        <div>
+          <img src="images/20251019_103427.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
+    <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">
+      Super Deluxe Room
+    </h1>
+    <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
+      <a href="stay-details.html">
+        <div>
+          <img src="images/IMG-20251018-WA0030.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+      <a href="stay-details.html">
+        <div>
+          <img src="images/IMG-20251018-WA0031.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+      <a href="stay-details.html">
+        <div>
+          <img src="images/IMG-20251018-WA0032.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+      <a href="stay-details.html">
+        <div>
+          <img src="images/IMG-20251018-WA0033.jpg" class="rounded-lg mx-3" alt="" />
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 playfair">Eaze Boulevard</h3>
+        <p class="text-gray-400">
+          Eaze Boulevard provides premium hotel stays and car rental services that bring ease to every traveler.
+          Experience convenience, comfort, class all in one place.
+        </p>
       </div>
-    </section>
-
-    <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
-      <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">Deluxe Room</h1>
-      <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/20251019_103203.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/20251019_103304.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/20251019_103333.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/20251019_103427.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+          <li>
+            <a href="cars.html" class="text-gray-400 hover:text-white">Hotel Stays</a>
+          </li>
+          <li>
+            <a href="stays.html" class="text-gray-400 hover:text-white">Car Rentals</a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <section class="md:max-w-7xl w-[90%] mx-auto mt-12">
-      <h1 class="text-2xl md:text-4xl font-bold mb-6 playfair">
-        Super Deluxe Room
-      </h1>
-      <div class="grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8">
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/IMG-20251018-WA0030.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/IMG-20251018-WA0031.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/IMG-20251018-WA0032.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
-        <a href="stay-details.html">
-        <div>
-          <img
-            src="images/IMG-20251018-WA0033.jpg"
-            class="rounded-lg mx-3"
-            alt=""
-          />
-        </div>
-        </a>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li class="flex items-start">
+            <i data-feather="map-pin" class="mr-2 mt-1"></i>
+            <span>New Haven Health Centre Enugu, Nigeria</span>
+          </li>
+          <li class="flex items-center">
+            <i data-feather="phone" class="mr-2"></i>
+            <span>+234 803 133 9022</span>
+          </li>
+          <li class="flex items-center">
+            <i data-feather="mail" class="mr-2"></i>
+            <span>info@eazeboulevard.com</span>
+          </li>
+        </ul>
       </div>
-    </section>
 
-         <footer class="bg-gray-900 text-white py-12 px-4">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-          <h3 class="text-xl font-bold mb-4 playfair">Eaze Boulevard</h3>
-          <p class="text-gray-400">
-            Eaze Boulevard provides premium hotel stays and car rental services that bring ease to every traveler. Experience convenience, comfort, class all in one place.
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2">
-            <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
-            <li>
-              <a href="cars.html" class="text-gray-400 hover:text-white">Hotel Stays</a>
-            </li>
-            <li>
-              <a href="stays.html" class="text-gray-400 hover:text-white">Car Rentals</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-          <ul class="space-y-2 text-gray-400">
-            <li class="flex items-start">
-              <i data-feather="map-pin" class="mr-2 mt-1"></i>
-              <span>New Haven Health Centre Enugu, Nigeria</span>
-            </li>
-            <li class="flex items-center">
-              <i data-feather="phone" class="mr-2"></i>
-              <span>+234 803 133 9022</span>
-            </li>
-            <li class="flex items-center">
-              <i data-feather="mail" class="mr-2"></i>
-              <span>info@eazeboulevard.com</span>
-            </li>
-          </ul>
-        </div>
-       
-      </div>
-      <div
-        class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
-      >
-        <p>&copy; 2025 Eaze Boulevard. All rights reserved.</p>
-      </div>
-    </footer>
-<script>
-      VANTA.GLOBE({
-        el: "#vanta-bg",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0xffa500,
-        backgroundColor: 0x0,
-      });
-    </script>
-    <script>
-      feather.replace();
-    </script>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+      <p>&copy; 2025 Eaze Boulevard. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    VANTA.GLOBE({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0xffa500,
+      backgroundColor: 0x0,
+    });
+  </script>
+  <script>
+    feather.replace();
+  </script>
 
-    
-    <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
 
-        menuToggle.addEventListener("click", () =>  mobileMenu.classList.toggle("hidden"))
-    </script>
-  </body>
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => mobileMenu.classList.toggle("hidden"))
+  </script>
+</body>
+
 </html>
